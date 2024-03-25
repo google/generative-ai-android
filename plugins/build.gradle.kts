@@ -55,6 +55,6 @@ gradlePlugin {
 dependencies {
     implementation("com.android.tools.build:gradle:8.1.3")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation("org.jetbrains.kotlinx.binary-compatibility-validator:org.jetbrains.kotlinx.binary-compatibility-validator.gradle.plugin:0.13.2")
 }

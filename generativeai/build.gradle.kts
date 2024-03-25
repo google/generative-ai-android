@@ -73,7 +73,7 @@ android {
 }
 
 dependencies {
-    val ktorVersion = "2.3.2"
+    val ktorVersion = "2.3.9"
 
     implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
     implementation("io.ktor:ktor-client-core:$ktorVersion")
@@ -81,24 +81,24 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
     implementation("io.ktor:ktor-client-logging:$ktorVersion")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("org.slf4j:slf4j-android:1.7.36")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.7.3")
-    implementation("org.reactivestreams:reactive-streams:1.0.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.8.0")
+    implementation("org.reactivestreams:reactive-streams:1.0.4")
 
     implementation("com.google.guava:listenablefuture:1.0")
-    implementation("androidx.concurrent:concurrent-futures:1.2.0-alpha02")
-    implementation("androidx.concurrent:concurrent-futures-ktx:1.2.0-alpha02")
+    implementation("androidx.concurrent:concurrent-futures:1.2.0-alpha03")
+    implementation("androidx.concurrent:concurrent-futures-ktx:1.2.0-alpha03")
     testImplementation("junit:junit:4.13.2")
-    testImplementation("io.kotest:kotest-assertions-core:4.0.7")
+    testImplementation("io.kotest:kotest-assertions-core:5.8.1")
     testImplementation("io.kotest:kotest-assertions-jvm:4.0.7")
     testImplementation("io.ktor:ktor-client-mock:$ktorVersion")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.8.20")
+    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.9.20")
 }
 
 publishing {
